@@ -228,6 +228,22 @@ NAME  PROPERTY     VALUE           SOURCE
 otus  compression  zle             local
 root@u24srv04:~#
 ```
+##### Значение recordsize
+```
+root@u24srv04:~# zfs get recordsize otus
+NAME  PROPERTY    VALUE    SOURCE
+otus  recordsize  128K     local
+root@u24srv04:~#
+```
+##### какая контрольная сумма используется
+```
+root@u24srv04:~# zfs get checksum otus
+NAME  PROPERTY  VALUE      SOURCE
+otus  checksum  sha256     local
+root@u24srv04:~#
+
+```
+
 ### Работа со снапшотом, поиск сообщения от преподавателя
 #### Скачаем файл, указанный в задании:  
 ```
